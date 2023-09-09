@@ -14,17 +14,17 @@ st.write("# 호기심 천국에 오신 것을 환영합니다! 👋")
 
 st.sidebar.success("Select a demo above.")
 
-file_path1 = r'C:\Users\lg\Desktop\졸작\호기심천국\호기심천국 WEB\WEB_DATA\origin.csv'
+file_path1 = r'WEB_DATA/origin.csv'
 origin = pd.read_csv(file_path1, encoding='utf8')
 
-file_path2 = r'C:\Users\lg\Desktop\졸작\호기심천국\호기심천국 WEB\WEB_DATA\datalab.csv'
+file_path2 = r'WEB_DATA/datalab.csv'
 datalab = pd.read_csv(file_path2, encoding='utf8')
 
 ranking = pd.merge(origin, datalab, left_on='단어', right_on=datalab.iloc[:, 0], how='left')
 ratio = ranking.iloc[:, 3:]
 ranking = ranking.iloc[:, 0:2]
 
-file_path3 = r'C:\Users\lg\Desktop\졸작\호기심천국\호기심천국 WEB\WEB_DATA\sentences.csv'
+file_path3 = r'WEB_DATA/sentences.csv'
 sentences = pd.read_csv(file_path3, encoding="utf8")
 
 # 각 단어에 대한 포함된 문장의 길이를 계산하여 새로운 열 생성
