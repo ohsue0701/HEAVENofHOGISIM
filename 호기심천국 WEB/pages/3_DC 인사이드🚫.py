@@ -9,13 +9,13 @@ import math
 st.markdown("# DC인사이드 🚫")
 st.sidebar.markdown("# DC인사이드 🚫")
 
-file_path1 = r'C:\Users\lg\Desktop\졸작\호기심천국\호기심천국 WEB\WEB_DATA\origin_DC.csv'
-file_path2 = r'C:\Users\lg\Desktop\졸작\호기심천국\호기심천국 WEB\WEB_DATA\datalab_DC.csv'
-file_path3 = r'C:\Users\lg\Desktop\졸작\호기심천국\호기심천국 WEB\WEB_DATA\sentences_DC.csv'
+file_path1 = r'WEB_DATA/origin_DC.csv'
+file_path2 = r'WEB_DATA/datalab_DC.csv'
+file_path3 = r'WEB_DATA/sentences_DC.csv'
 
-file_path1 = r'C:\Users\lg\Desktop\졸작\호기심천국_clean.ver\DATA\WEB_DATA\origin_DC_발표샘플.csv'
-file_path2 = r'C:\Users\lg\Desktop\졸작\호기심천국_clean.ver\DATA\WEB_DATA\datalab_DC_발표샘플.csv'
-file_path3 = r'C:\Users\lg\Desktop\졸작\호기심천국_clean.ver\DATA\WEB_DATA\sentences_DC_발표샘플.csv'
+file_path1 = r'WEB_DATA/origin_DC_발표샘플.csv'
+file_path2 = r'WEB_DATA/datalab_DC_발표샘플.csv'
+file_path3 = r'WEB_DATA/sentences_DC_발표샘플.csv'
 
 origin = pd.read_csv(file_path1, encoding='utf8')
 datalab = pd.read_csv(file_path2, encoding='utf8')
@@ -110,7 +110,7 @@ ranking.drop(columns=['단어_y'], inplace=True)
 
 
 ################################# TF IDF test ##################################
-data_path = r'C:\Users\lg\Desktop\졸작\호기심천국_clean.ver\DATA\crawling_result\NEWS_크롤링결과_발표샘플.csv'
+data_path = r'crawling_result/NEWS_크롤링결과_발표샘플.csv'
 data = pd.read_csv(data_path)
 df = pd.DataFrame(data)
 
