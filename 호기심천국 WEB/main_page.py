@@ -22,10 +22,10 @@ def load_image(img_file):
     img = Image.open(img_file)
     return img
 
-wordCloud = load_image(r'C:\Users\lg\Desktop\졸작\호기심천국_clean.ver\DATA\WEB_DATA\호기심천국_워드클라우드.png')
+wordCloud = load_image(r'WEB_DATA/호기심천국_워드클라우드.png')
 st.image(wordCloud)           
 
-sample_path = r'C:\Users\lg\Desktop\졸작\호기심천국_clean.ver\DATA\WEB_DATA\sample.csv'
+sample_path = r'WEB_DATA/sample.csv'
 sample_datalab = pd.read_csv(sample_path, encoding='utf8')
 
 temp = 0
