@@ -12,13 +12,13 @@ st.sidebar.markdown("# 네이트판 🤡")
 
 st.sidebar.success("Select a demo above.")
 
-# file_path1 = r'C:\Users\lg\Desktop\졸작\호기심천국_clean.ver\DATA\WEB_DATA\origin_PANN.csv'
-# file_path2 = r'C:\Users\lg\Desktop\졸작\호기심천국_clean.ver\DATA\WEB_DATA\datalab_PANN.csv'
-# file_path3 = r'C:\Users\lg\Desktop\졸작\호기심천국_clean.ver\DATA\WEB_DATA\sentences_PANN.csv'
+# file_path1 = r'WEB_DATA/origin_PANN.csv'
+# file_path2 = r'WEB_DATA/datalab_PANN.csv'
+# file_path3 = r'WEB_DATA/sentences_PANN.csv'
 
-file_path1 = r'C:\Users\lg\Desktop\졸작\호기심천국_clean.ver\DATA\WEB_DATA\origin_PANN_발표샘플.csv'
-file_path2 = r'C:\Users\lg\Desktop\졸작\호기심천국_clean.ver\DATA\WEB_DATA\datalab_PANN_발표샘플.csv'
-file_path3 = r'C:\Users\lg\Desktop\졸작\호기심천국_clean.ver\DATA\WEB_DATA\sentences_PANN_발표샘플.csv'
+file_path1 = r'WEB_DATA/origin_PANN_발표샘플.csv'
+file_path2 = r'WEB_DATA/datalab_PANN_발표샘플.csv'
+file_path3 = r'WEB_DATA/sentences_PANN_발표샘플.csv'
 
 origin = pd.read_csv(file_path1, encoding='utf8')
 datalab = pd.read_csv(file_path2, encoding='utf8')
@@ -113,7 +113,7 @@ ranking.drop(columns=['단어_y'], inplace=True)
 
 
 ################################# TF IDF test ##################################
-data_path = r'C:\Users\lg\Desktop\졸작\호기심천국_clean.ver\DATA\crawling_result\PANN_크롤링결과_발표샘플.csv'
+data_path = r'crawling_result/PANN_크롤링결과_발표샘플.csv'
 data = pd.read_csv(data_path)
 df = pd.DataFrame(data)
 
